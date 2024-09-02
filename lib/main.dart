@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      routes: {'/': (context) => page1(), '/page2': (context) => page2()},
+      routes: {'/': (context) => page1(), '/page2': (context) => Page2()},
       initialRoute: '/',
     );
   }

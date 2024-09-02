@@ -1,10 +1,48 @@
 import 'package:flutter/material.dart';
 
-class page2 extends StatelessWidget {
-  const page2({super.key});
+class Page2 extends StatefulWidget {
+  const Page2({super.key});
 
   @override
+  State<Page2> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<Page2> {
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text('ini halaman 2')));
+    return Scaffold(
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.amber,
+              )
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
